@@ -37,10 +37,6 @@ def main():
     process_folder(os.path.join(base_raw, 'HC'), os.path.join(base_processed, 'train/HC'), 0)
     process_folder(os.path.join(base_raw, 'patient'), os.path.join(base_processed, 'train/patient'), 1)
 
-    # 处理测试集
-    process_folder(os.path.join(base_raw, 'test_data/HC'), os.path.join(base_processed, 'test/HC'), 0)
-    process_folder(os.path.join(base_raw, 'test_data/patient'), os.path.join(base_processed, 'test/patient'), 1)
-
     print("预处理完成！")
 
 if __name__ == '__main__':
